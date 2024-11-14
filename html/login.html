@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuk Sebagai</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="logo">
+        <img src="img/Logo Container.png" alt="Warga Siaga Logo" />
+      </div>
+      <h1>Masuk Sebagai</h1>
+      <button onclick="login('pengguna')" class="button primary">
+        Pengguna
+      </button>
+      <button onclick="login('admin')" class="button secondary">Admin</button>
+    </div>
+
+    <script>
+      function login(type) {
+        if (type === "pengguna") {
+          window.location.href = "login-user.html";
+        } else {
+          window.location.href = "login-admin.html";
+        }
+      }
+    </script>
+  </body>
+</html>
